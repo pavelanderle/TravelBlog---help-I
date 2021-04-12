@@ -1,0 +1,69 @@
+<?php
+%A%
+		if (true) /* line %d% */ {
+			echo '	a
+';
+		}
+		elseif ($b) /* line %d% */ {
+			echo '	b
+';
+		}
+		elseif (isset($c)) /* line %d% */ {
+			echo '	c
+';
+		}
+		else /* line %d% */ {
+			echo '	d
+';
+		}
+		echo '
+--
+
+';
+		ob_start(function () {}) /* line %d% */;
+		echo '	a
+';
+		if (true) /* line %d% */ echo ob_get_clean();
+		else ob_end_clean();
+		echo '
+
+--
+
+';
+		ob_start(function () {}) /* line %d% */;
+		echo '	a
+';
+		ob_start(function () {}) /* line %d% */;
+		echo '	d
+';
+		if (true) /* line %d% */ {
+			ob_end_clean();
+			echo ob_get_clean();
+		}
+		else {
+			$ʟ_tmp = ob_get_clean();
+			ob_end_clean();
+			echo $ʟ_tmp;
+		}
+		echo '
+
+--
+
+';
+		if (isset($a)) /* line %d% */ {
+			echo '	a
+';
+		}
+		elseif ($b) /* line %d% */ {
+			echo '	b
+';
+		}
+		elseif (isset($c)) /* line %d% */ {
+			echo '	c
+';
+		}
+		else /* line %d% */ {
+			echo '	d
+';
+		}
+%A%

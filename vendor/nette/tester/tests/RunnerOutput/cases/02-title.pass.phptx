@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * TEST: Title for output handlers
+ */
+
+require __DIR__ . '/../../bootstrap.php';
+Tester\Environment::$checkAssertions = false;
+
+echo "Multi\nline\nstdout.";

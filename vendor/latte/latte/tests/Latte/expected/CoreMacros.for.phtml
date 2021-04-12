@@ -1,0 +1,22 @@
+<?php
+%A%
+		for ($i = 0;
+		$i < 10;
+		$++) /* line %d% */ {
+			echo '	';
+			echo LR\Filters::escapeHtmlText($i) /* line %d% */;
+			echo "\n";
+		}
+		echo '
+
+';
+		for ($i = 0;
+		$i < 10;
+		$++) /* line %d% */ {
+			if (true) /* line %d% */ break;
+			if (true) /* line %d% */ continue;
+			echo '	';
+			echo LR\Filters::escapeHtmlText($i) /* line %d% */;
+			echo "\n";
+		}
+%A%

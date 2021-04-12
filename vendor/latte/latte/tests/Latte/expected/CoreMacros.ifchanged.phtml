@@ -1,0 +1,131 @@
+<?php
+%A%
+		foreach ([1, 1, 2, 3, 3, 3] as $i) /* line %d% */ {
+			echo ' ';
+			if (($ʟ_loc[1] ?? null) !== ($ʟ_tmp = [$i])) {
+				$ʟ_loc[1] = $ʟ_tmp;
+				echo ' ';
+				echo LR\Filters::escapeHtmlText($i) /* line %d% */;
+				echo ' ';
+			}
+			echo ' ';
+			if (($ʟ_loc[2] ?? null) !== ($ʟ_tmp = ['a', 'b'])) {
+				$ʟ_loc[2] = $ʟ_tmp;
+				echo ' const ';
+			}
+			echo ' ';
+			$iterations++;
+		}
+		echo '
+
+--
+
+';
+		$iterations = 0;
+		foreach ([1, 1, 2, 3, 3, 3] as $i) /* line %d% */ {
+			echo ' ';
+			if (($ʟ_loc[3] ?? null) !== ($ʟ_tmp = [$i])) {
+				$ʟ_loc[3] = $ʟ_tmp;
+				echo ' ';
+				echo LR\Filters::escapeHtmlText($i) /* line %d% */;
+				echo ' ';
+			}
+			else /* line %d% */ {
+				echo ' else ';
+			}
+			echo ' ';
+			$iterations++;
+		}
+		echo '
+
+--
+
+';
+		$iterations = 0;
+		foreach ([1, 1, 2, 3, 3, 3] as $i) /* line %d% */ {
+			echo ' ';
+			ob_start(function () {});
+			try /* line %d% */ {
+				echo ' -';
+				echo LR\Filters::escapeHtmlText($i) /* line %d% */;
+				echo '- ';
+			}
+			finally {
+				$ʟ_tmp = ob_get_clean();
+			}
+			if (($ʟ_loc[4] ?? null) !== $ʟ_tmp) {
+				echo $ʟ_loc[4] = $ʟ_tmp;
+			}
+			echo ' ';
+			$iterations++;
+		}
+		echo '
+
+--
+
+';
+		$iterations = 0;
+		foreach ([1, 1, 2, 3, 3, 3] as $i) /* line %d% */ {
+			echo ' ';
+			ob_start(function () {});
+			try /* line %d% */ {
+				echo ' -';
+				echo LR\Filters::escapeHtmlText($i) /* line %d% */;
+				echo '- ';
+			}
+			finally {
+				$ʟ_tmp = ob_get_clean();
+			}
+			if (($ʟ_loc[5] ?? null) !== $ʟ_tmp) {
+				echo $ʟ_loc[5] = $ʟ_tmp;
+			}
+			else /* line %d% */ {
+				echo ' else ';
+			}
+			echo ' ';
+			$iterations++;
+		}
+		echo '
+
+--
+
+';
+		$iterations = 0;
+		foreach ([1, 1, 2, 3, 3, 3] as $i) /* line %d% */ {
+			echo ' ';
+			ob_start(function () {});
+			try /* line %d% */ {
+				echo '<span>';
+				echo LR\Filters::escapeHtmlText($i) /* line %d% */;
+				echo '</span>';
+			}
+			finally {
+				$ʟ_tmp = ob_get_clean();
+			}
+			if (($ʟ_loc[6] ?? null) !== $ʟ_tmp) {
+				echo $ʟ_loc[6] = $ʟ_tmp;
+			}
+			$iterations++;
+		}
+		echo '
+--
+
+';
+		$iterations = 0;
+		foreach ([1, 1, 2, 3, 3, 3] as $i) /* line %d% */ {
+			echo ' ';
+			ob_start(function () {});
+			try /* line %d% */ {
+				echo '<span class="';
+				echo LR\Filters::escapeHtmlAttr($i) /* line %d% */;
+				echo '"></span>';
+			}
+			finally {
+				$ʟ_tmp = ob_get_clean();
+			}
+			if (($ʟ_loc[7] ?? null) !== $ʟ_tmp) {
+				echo $ʟ_loc[7] = $ʟ_tmp;
+			}
+			$iterations++;
+		}
+%A%

@@ -1,0 +1,44 @@
+<?php
+%A%
+		$iterations = 0;
+		foreach ($iterator = $ʟ_it = new LR\CachingIterator([0, 1, 2, 3], $ʟ_it ?? null) as $item) /* line %d% */ {
+			if ($item % 2) /* line %d% */ continue;
+			echo '	';
+			echo LR\Filters::escapeHtmlText($iterator->counter) /* line %d% */;
+			echo '. item
+';
+			$iterations++;
+		}
+		$iterator = $ʟ_it = $ʟ_it->getParent();
+		echo '
+---
+
+';
+		$iterations = 0;
+		foreach ($iterator = $ʟ_it = new LR\CachingIterator([0, 1, 2, 3], $ʟ_it ?? null) as $item) /* line %d% */ {
+			if ($item % 2) /* line %d% */ {
+				$iterator->skipRound();
+				continue;
+			};
+			echo '	';
+			echo LR\Filters::escapeHtmlText($iterator->counter) /* line %d% */;
+			echo '. item
+';
+			$iterations++;
+		}
+		$iterator = $ʟ_it = $ʟ_it->getParent();
+		echo '
+---
+
+';
+		$iterations = 0;
+		foreach ($iterator = $ʟ_it = new LR\CachingIterator([0, 1, 2, 3], $ʟ_it ?? null) as $item) /* line %d% */ {
+			if ($item % 2) /* line %d% */ break;
+			echo '	';
+			echo LR\Filters::escapeHtmlText($iterator->counter) /* line %d% */;
+			echo '. item
+';
+			$iterations++;
+		}
+		$iterator = $ʟ_it = $ʟ_it->getParent();
+%A%
